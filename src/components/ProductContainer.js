@@ -16,7 +16,7 @@ function UserContainer({ productData, fetchProducts }) {
                     <div>
                         {
                             productData.products.map(item =>
-                                <div>
+                                <div key={item.id}>
                                     <img src={item.image} alt="avatar" />
                                     {/*<div>Id: {item.id}</div>*/}
                                     {/*<div>Featured: {item.featured.toString()}</div>*/}
