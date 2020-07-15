@@ -11,9 +11,8 @@ function Home() {
                 <ul>
                     <li><a href='Home'>Home</a></li>
                     <li><a href='Shop'>Shop</a></li>
-                    <li className="cart"><a href='Cart'>
-                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
-                    </a></li>
+                    <li><a href="Cart">Cart</a></li>
+
                 </ul>
             </nav>
         </header>
