@@ -29,7 +29,7 @@ function ProductContainer({ productData, fetchProducts, cartDate, addProduct }) 
                                         <p>Name: {item.name}</p>
                                         <p>Manufacture: {item.manufacture} </p>
                                         {/*<div>Amount: {item.amount}</div>*/}
-                                        <a href="#">Add to Cart</a>
+                                        <button onClick={addProduct(item)}>Add to Cart</button>
                                     </div>
                                 </div>
 
@@ -43,14 +43,14 @@ function ProductContainer({ productData, fetchProducts, cartDate, addProduct }) 
 const mapStateToProps = state => {
     return {
         productData: state.product,
-        cartDate: state.cart,
+        //cartDate: state.cart,
     }
 }
 
 const mapDispatchToProps = dispatch => {
     return {
         fetchProducts: () => dispatch(fetchProducts()),
-        addProduct: () => dispatch(addProduct())
+        addProduct: (product) => dispatch(addProduct(product))
 
     }
 }
