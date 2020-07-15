@@ -9,9 +9,9 @@ function Home() {
             <nav>
                 <h2>Shop</h2>
                 <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Shop</a></li>
-                    <li className="cart"><a href='#'>
+                    <li><a href='Home'>Home</a></li>
+                    <li><a href='Shop'>Shop</a></li>
+                    <li className="cart"><a href='Cart'>
                         <ion-icon name="basket"></ion-icon>Cart<span>0</span>
                     </a></li>
                 </ul>

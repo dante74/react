@@ -20,8 +20,8 @@ function ProductContainer({ productData, fetchProducts, addProduct }) {
                     <div>
                         {
                             productData.products.map(item =>
-                                <div className="container">
-                                    <div className="image" key={item.id}>
+                                <div className="container" key={item.id}>
+                                    <div className="image" >
                                         <img src={item.image} alt="avatar" />
                                         {/*<div>Id: {item.id}</div>*/}
                                         {/*<div>Featured: {item.featured.toString()}</div>*/}
@@ -29,7 +29,7 @@ function ProductContainer({ productData, fetchProducts, addProduct }) {
                                         <p>Name: {item.name}</p>
                                         <p>Manufacture: {item.manufacture} </p>
                                         {/*<div>Amount: {item.amount}</div>*/}
-                                        <button onClick={addProduct(item)}>Add to Cart</button>
+                                        <button onClick={()=>addProduct(item)}>Add to Cart</button>
                                     </div>
                                 </div>
 
