@@ -6,7 +6,7 @@ import '../App.css';
 
 
 
-function ProductContainer({ productData, fetchProducts, cartDate, addProduct }) {
+function ProductContainer({ productData, fetchProducts, addProduct }) {
     useEffect(() => {
         fetchProducts();
     }, []);
